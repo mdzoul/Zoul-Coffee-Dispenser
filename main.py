@@ -25,9 +25,9 @@ def coin_processing():
 	coffee_price = MENU[prompt]["cost"]
 	print(f"\33[34m{prompt.capitalize()}\33[0m: \33[32m${coffee_price:.2f}\33[0m\nPlease insert coins.\n")
 	
-	cent10_inserted = int(input("How many 10c coins? ")) * 0.1
-	cent20_inserted = int(input("How many 20c coins? ")) * 0.2
-	cent50_inserted = int(input("How many 50c coins? ")) * 0.5
+	cent10_inserted = int(input("10c coins: ")) * 0.1
+	cent20_inserted = int(input("20c coins: ")) * 0.2
+	cent50_inserted = int(input("50c coins: ")) * 0.5
 	
 	total_amount = cent10_inserted + cent20_inserted + cent50_inserted
 	change_amount = total_amount - coffee_price
