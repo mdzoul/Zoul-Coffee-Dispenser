@@ -76,9 +76,9 @@ while not off:
 					unit = "g"
 				else:
 					unit = "ml"
-				print(f"{key.capitalize()}: {resources[key]} {unit}")
+				print(f"{key.capitalize()}: {resources[key]}{unit}")
 			print("---")
-			print(f"\33[1mProfit:\33[0m \33[1;32m${profit}\33[0m")
+			print(f"\33[1mProfit:\33[0m \33[1;32m${profit:.2f}\33[0m")
 		
 		if prompt == "refill":
 			resourcesIngredient = input("\nWhat do you want to refill? ").lower()
